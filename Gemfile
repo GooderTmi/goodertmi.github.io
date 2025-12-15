@@ -12,3 +12,11 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
+
+# 插件依赖（和 _config.yml 中的 plugins 对应）
+group :jekyll_plugins do
+  gem "jekyll-seo-tag"
+  gem "jekyll-feed"
+  gem "jekyll-katex"
+  gem "jekyll-sitemap"
+end
